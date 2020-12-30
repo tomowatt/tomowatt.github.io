@@ -1,0 +1,59 @@
+/*
+Example used: https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type
+*/
+
+/* setup */
+html,
+body,
+.holster {
+    font-family: "HelveticaNeue-Bold", Helvetica, Arial;
+    height: 100%;
+    width: 100%;
+}
+
+.holster {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column nowrap;
+    overflow-y: hidden;
+}
+
+.container {
+    display: flex;
+    overflow: auto;
+}
+
+.container.y {
+    flex-flow: column nowrap;
+}
+
+/* scroll-snap */
+
+.y.mandatory-scroll-snapping {
+    scroll-snap-type: y mandatory;
+}
+
+.container > div {
+    text-align: center;
+    scroll-snap-align: center;
+    flex: none;
+}
+
+.y.container > div {
+    height: 100%;
+    font-size: 8vw;
+}
+
+/* appearance fixes */
+.y.container > div:first-child {
+    font-size: 20vw;
+}
+
+/* coloration */
+.container > div:nth-child(even) {
+    background-color: #87EA87;
+}
+
+.container > div:nth-child(odd) {
+    background-color: #87CCEA;
+}
