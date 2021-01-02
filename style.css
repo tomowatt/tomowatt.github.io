@@ -48,27 +48,39 @@ footer > a > img {
     scroll-snap-type: y mandatory;
 }
 
-.container > div {
+.container > section {
     text-align: center;
     scroll-snap-align: center;
     flex: none;
 }
 
-.y.container > div {
+.y.container > section {
     height: 100vh;
-    font-size: 8vw;
+    font-size: 7vw;
 }
 
 /* appearance fixes */
-.y.container > div:first-child {
-    font-size: 20vw;
+.y.container > section:first-child {
+    font-size: 16vw;
 }
 
 /* coloration */
-.container > div:nth-child(even) {
+.container > section:nth-child(even) {
     background-color: whitesmoke;
 }
 
-.container > div:nth-child(odd) {
+.container > section:nth-child(odd) {
     background-color: white;
+}
+
+ul {
+    list-style: none outside;
+}
+
+li {
+    font-size: 3vh;
+}
+
+.docs > li::before {
+    content: "🔗 ";
 }
