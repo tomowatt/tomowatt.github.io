@@ -16,7 +16,7 @@ body,
 footer {
     color: white;
     background-color: black;
-    padding: 1vh;
+    padding: 1vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,13 +55,13 @@ footer > a > img {
 }
 
 .y.container > section {
-    height: 100vh;
-    font-size: 7vw;
+    height: 100%;
+    font-size: 3em;
 }
 
 /* appearance fixes */
 .y.container > section:first-child {
-    font-size: 16vw;
+    font-size: 10em;
 }
 
 /* coloration */
@@ -74,11 +74,12 @@ footer > a > img {
 }
 
 ul {
-    list-style: none outside;
+    list-style: none;
+    text-align: left;
 }
 
 li {
-    font-size: 3vh;
+    font-size: 0.5em;
 }
 
 .docs > li::before {
