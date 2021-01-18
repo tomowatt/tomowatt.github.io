@@ -1,87 +1,19 @@
-/*
-Example used: https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type
-*/
-
-/* setup */
-html,
-body,
-.holster {
-    font-family: "HelveticaNeue-Bold", Helvetica, Arial, monospace;
-    color: black;
-    height: 100%;
-    width: 100%;
-    margin: 0;
+.tile.is-parent {
+    padding: 0;
 }
 
-footer {
-    color: white;
-    background-color: black;
-    padding: 1vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-footer > a > img {
-    padding: 0 0 0 1vh;
-}
-
-.holster {
-    display: flex;
-    justify-content: space-between;
-    flex-flow: column nowrap;
-    overflow-y: hidden;
-}
-
-.container {
-    display: flex;
-    overflow: auto;
-}
-
-.container.y {
-    flex-flow: column nowrap;
-}
-
-/* scroll-snap */
-
-.y.mandatory-scroll-snapping {
-    scroll-snap-type: y mandatory;
-}
-
-.container > section {
-    text-align: center;
-    scroll-snap-align: center;
-    flex: none;
-}
-
-.y.container > section {
-    height: 100%;
-    font-size: 3em;
-}
-
-/* appearance fixes */
-.y.container > section:first-child {
-    font-size: 10em;
-}
-
-/* coloration */
-.container > section:nth-child(even) {
-    background-color: whitesmoke;
-}
-
-.container > section:nth-child(odd) {
-    background-color: white;
-}
-
-ul {
-    list-style: none;
-    text-align: left;
-}
-
-li {
-    font-size: 0.5em;
+.automation > li::before {
+    content: "🤖 "
 }
 
 .docs > li::before {
-    content: "🔗 ";
+    content: "🔗 "
+}
+
+.tinker > li::before {
+    content: "🛠 "
+}
+
+.thoughts > li::before {
+    content: "🤔 "
 }

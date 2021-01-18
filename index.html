@@ -3,50 +3,82 @@
 
 <head>
     <title>Tom Watt</title>
-    <meta charset="utf-8">
     <meta name="Description" content="A simple page about myself and what technologies I use with examples.">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body class="holster">
-    <div class="container y mandatory-scroll-snapping">
-        <section>
-            <h1>Hello. 👋</h1>
-        </section>
-        <section>
-            <h1>My name is</h1>
-            <h2>Tom Watt</h2>
-            <h2>I do computery <i>things</i></h2>
-        </section>
-        <section>
-            <h1>Automation</h1>
-        </section>
-        <section>
-            <h1>Containers</h1>
-        </section>
-        <section>
-            <h1>Breaking, Fixing & Tinkering</h1>
-        </section>
-        <section>
-            <h1>Links</h1>
-            <p>Docs I use a <i>lot</i></p>
-            <ul class="docs">
-                <li>
-                    <a href="https://www.w3schools.com" target="_blank">w3schools</a>
-                </li>
-                <li>
-                    <a href="https://developer.mozilla.org/en-US/" target="_blank">Mozilla Developer Network (MDN)</a>
-                </li>
-                <li>
-                    <a href="https://kubernetes.io/docs/home/" target="_blank">kubernetes</a>
-                </li>
-            </ul>
-        </section>
+<body>
+    <div class="tile is-ancestor has-text-centered is-family-code">
+        <div class="tile is-parent is-vertical">
+            <section class="section tile is-child">
+                <h1 class="title">Hello. 👋</h1>
+            </section>
+            <section class="section tile is-child">
+                <h1 class="title">My name is</h1>
+                <h2 class="subtitle">Tom Watt</h2>
+                <h2 class="subtitle">I do computery <i>things</i></h2>
+            </section>
+            <section class="section tile is-child">
+                <h1 class="title">Automation</h1>
+                <ul class="content automation">
+                    <li>
+                        <a href="https://dev.to/tomowatt/aws-save-costs-with-lambda-12o3" target="_blank" rel="noreferrer">AWS - Save Costs with Lambda</a>
+                    </li>
+                    <li>
+                        <a href="https://dev.to/tomowatt/tips-for-using-ansible-33ff" target="_blank" rel="noreferrer">Tips for using Ansible</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="section tile is-child is-hidden">
+                <h1 class="title">Containers</h1>
+                <ul class="content">
+                </ul>
+            </section>
+            <section class="section tile is-child">
+                <h1 class="title">Breaking, Fixing & Tinkering</h1>
+                <ul class="content tinker">
+                    <li>
+                        <a href="https://dev.to/tomowatt/running-an-unity-webgl-game-within-docker-5039" target="_blank" rel="noreferrer">Running an Unity WebGL game within Docker</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="section tile is-child">
+                <h1 class="title">Thoughts</h1>
+                <ul class="content thoughts">
+                    <li>
+                        <a href="https://dev.to/tomowatt/why-we-need-code-reviews-hg8" target="_blank" rel="noreferrer">Why we need Code Reviews</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="section tile is-child">
+                <h1 class="title">Documents</h1>
+                <p>Docs I use a <i>lot</i></p>
+                <ul class="content docs">
+                    <li>
+                        <a href="https://www.w3schools.com" target="_blank" rel="noreferrer">w3schools</a>
+                    </li>
+                    <li>
+                        <a href="https://developer.mozilla.org/en-US/" target="_blank" rel="noreferrer">Mozilla Developer Network (MDN)</a>
+                    </li>
+                    <li>
+                        <a href="https://kubernetes.io/docs/home/" target="_blank" rel="noreferrer">Kubernetes</a>
+                    </li>
+                </ul>
+            </section>
+            <footer class="footer tile is-child has-background-dark">
+                <div class="content has-text-white">
+                    <p>Powered by</p>
+                    <a href="https://pages.github.com" target="_blank" rel="noreferrer">
+                        <img src="images/github.svg" alt="GitHub Logo">
+                    </a>
+                    <a href="https://bulma.io" target="_blank" rel="noreferrer">
+                        <img src="images/bulma.svg" alt="Bulma CSS Logo">
+                    </a>
+                </div>
+            </footer>
+        </div>
     </div>
-    <footer>
-        Powered by <a href="https://pages.github.com">
-            <img src="images/github-mark.svg" alt="GitHub Logo">
-        </a>
-    </footer>
 </body></html>
