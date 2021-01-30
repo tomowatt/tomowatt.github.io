@@ -17,3 +17,7 @@
 .thoughts > li::before {
     content: "🤔 "
 }
+
+.dev-badge {
+    width: 21px;
+}
