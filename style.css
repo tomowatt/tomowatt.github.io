@@ -18,6 +18,10 @@
     content: "🤔 "
 }
 
+.applications > li::before {
+    content: "🏗 "
+}
+
 .dev-badge {
     width: 21px;
 }
