@@ -2,23 +2,23 @@
     padding: 0;
 }
 
-.automation > li::before {
+.automation>li::before {
     content: "🤖 "
 }
 
-.docs > li::before {
+.docs>li::before {
     content: "🔗 "
 }
 
-.tinker > li::before {
+.tinker>li::before {
     content: "🛠 "
 }
 
-.thoughts > li::before {
+.thoughts>li::before {
     content: "🤔 "
 }
 
-.applications > li::before {
+.applications>li::before {
     content: "🏗 "
 }
 
