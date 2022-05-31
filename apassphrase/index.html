@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Passphrase Generator</title>
+    <meta name="description" content="A simple application to get a long and memorable passphrase">
+    <meta name="author" content="Tom Watt">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href='main.css'>
+    <script defer src='main.js'></script>
+</head>
+
+<body>
+    <header>
+            <h1>Long is strong.</h1>
+            <h1>Strong does not mean hard.</h1>
+    </header>
+    <section>
+        <div>
+            <div class="passphrase" id="passphrase"> </div>
+        </div>
+        <button onclick="getPassphrase()">Get a Passphrase</button>
+    </section>
+    <section>
+        <div>
+            <div class="emojiphrase" id="emojiphrase"> </div>
+            <div class="emojis" id="emojis"> </div>
+        </div>
+        <button onclick="getEmojiphrase()">Get a Emojiphrase</button>
+    </section>
+    <footer>
+            <p>Powered by</p>
+            <a href="https://pages.github.com" target="_blank" rel="noreferrer">
+                <img src="../images/github.svg" alt="GitHub Logo">
+            </a>
+            <a href="https://heroku.com" target="_blank" rel="noreferrer">
+                <img src="../images/heroku.svg" alt="Heroku Logo">
+            </a>
+    </footer>
+</body>
+
+</html>

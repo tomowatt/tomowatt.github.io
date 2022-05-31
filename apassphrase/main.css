@@ -1,0 +1,62 @@
+body {
+    font-family: monospace;
+    margin: 0;
+    text-align: center;
+}
+
+h1, p {
+    margin: 0;
+    padding: 1vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    height: 20vh;
+    width: 100%;
+}
+
+header > h1:first-child {
+    padding-top: 6vh;
+}
+
+section {
+    padding-top: 6vh;
+    height: 20vh;
+    width: 100%;
+}
+
+.passphrase, .emojiphrase {
+    font-size: 2em;
+}
+
+.emojis {
+    font-size: 5em;
+}
+
+footer {
+    height: 10vh;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+button {
+    font-family: inherit;
+    margin: 20px 10px 10px 10px;
+    padding: 10px 20px 10px 20px;
+    background: #333;
+    color: white;
+}
+
+@media only screen and (max-width: 660px) {
+    .passphrase, .emojiphrase {
+        font-size: 1.4em;
+    }
+
+    .emojis {
+        font-size: 3em;
+    }
+}
