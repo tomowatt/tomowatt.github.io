@@ -18,7 +18,7 @@ function getAWord(dictionary) {
 }
 
 function getDefaultDictionaries() {
-  return [colours, animals, verbs, adverbs];
+  return [colours, animals, verbs, adverbs, adjectives];
 }
 
 export { getAWord, getDefaultDictionaries };
