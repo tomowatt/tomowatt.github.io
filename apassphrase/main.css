@@ -23,9 +23,9 @@ header > h1:first-child {
 }
 
 section {
-    padding-top: 6vh;
-    height: 20vh;
+    padding: 20px 0;
     width: 100%;
+    min-height: 20vh;
 }
 
 .passphrase, .emojiphrase {
@@ -38,8 +38,7 @@ section {
 
 footer {
     height: 10vh;
-    bottom: 0;
-    position: fixed;
+    margin-top: 20px;
     width: 100%;
 }
 
